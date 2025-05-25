@@ -9,6 +9,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/dashboard',
+      },
+    ]
+  },
 }
 
 export default nextConfig
